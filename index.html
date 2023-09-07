@@ -1,0 +1,131 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="icon" type="image/png" sizes="32x32" href="./images/favicon-32x32.png">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Epilogue:wght@500;700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="styles.css">
+  <script defer src="script.js"></script>
+  <title>Frontend Mentor | Intro section with dropdown navigation</title>
+</head>
+
+<body>
+  <header id="header">
+    <nav class="desktop-nav-container">
+      <div class="desktop-nav">
+        <div class="logo-container">
+          <img src="images/logo.svg" alt="snap logo">
+        </div>
+        <div class="desktop-nav-items">
+          <ul>
+            <li id="features" class="nav-item">Features
+              <img id="featuresArrowUp" src="images/icon-arrow-down.svg" alt="arrow down">
+              <img id="featuresArrowDown" class="hidden" src="images/icon-arrow-up.svg" alt="arrow up">
+              <div id="featuresDropdown" class="hidden dropdown">
+                <ul class="submenu">
+                  <li class="submenu-item"><img src="images/icon-todo.svg" alt="">Todo List</li>
+                  <li class="submenu-item"><img src="images/icon-calendar.svg" alt="">Calender</li>
+                  <li class="submenu-item"><img src="images/icon-reminders.svg" alt="">Reminders</li>
+                  <li class="submenu-item"><img src="images/icon-planning.svg" alt="">Planning</li>
+                </ul>
+              </div>
+            </li>
+            <li id="company" class="nav-item">Company
+              <img id="companyArrowUp" src="images/icon-arrow-down.svg" alt="arrow down">
+              <img id="companyArrowDown" class="hidden" src="images/icon-arrow-up.svg" alt="arrow up">
+              <div id="companyDropdown" class="hidden company-dropdown">
+                <ul class="submenu">
+                  <li class="submenu-item">History</li>
+                  <li class="submenu-item">Our Team</li>
+                  <li class="submenu-item">Blog</li>
+                </ul>
+              </div>
+            </li>
+            <li class="nav-item">Careers</li>
+            <li class="nav-item">About</li>
+          </ul>
+        </div>
+      </div>
+      <div class="header-buttons">
+        <p class="nav-item">Login</p>
+        <button class="nav-btn">Register</button>
+      </div>
+    </nav>
+    <div class="hamburger">
+      <img id="hamburger" src="images/icon-menu.svg" alt="menu button">
+    </div>
+  </header>
+
+  <aside id="mobile-nav" class="mobile-nav-sidebar hidden">
+    <nav class="mobile-nav">
+      <div class="close-btn-container">
+        <img id="closeButton" src="images/icon-close-menu.svg" alt="close button">
+      </div>
+      <ul class="nav-list">
+        <li id="mobileFeatures" class="nav-item">Features
+          <img id="mobileFeaturesArrowDown" class="hidden" src="images/icon-arrow-down.svg" alt="arrow down">
+          <img id="mobileFeaturesArrowUp" src="images/icon-arrow-up.svg" alt="arrow up">
+          <div class="hidden mobile-dropdown">
+            <ul class="submenu">
+              <li class="submenu-item"><img src="images/icon-todo.svg" alt="">Todo List</li>
+              <li class="submenu-item"><img src="images/icon-calendar.svg" alt="">Calender</li>
+              <li class="submenu-item"><img src="images/icon-reminders.svg" alt="">Reminders</li>
+              <li class="submenu-item"><img src="images/icon-planning.svg" alt="">Planning</li>
+            </ul>
+          </div>
+        </li>
+        <li id="mobileCompany" class="nav-item">Company
+          <img id="mobileCompanyArrowDown" class="hidden" src="images/icon-arrow-down.svg" alt="arrow down">
+          <img id="mobileCompanyArrowUp" src="images/icon-arrow-up.svg" alt="arrow up">
+          <div class="hidden mobile-dropdown">
+            <ul class="submenu">
+              <li class="submenu-item">History</li>
+              <li class="submenu-item">Our Team</li>
+              <li class="submenu-item">Blog</li>
+            </ul>
+          </div>
+        </li>
+        <li id="mobileCareers" class="nav-item">Careers</li>
+        <li id="mobileAbout" class="nav-item">About</li>
+      </ul>
+    </nav>
+    <div class="nav-button-container">
+      <p class="nav-item">Login</p>
+      <button class="nav-btn">Register</button>
+    </div>
+  </aside>
+
+
+  <main id="mainContent">
+    <div class="mobile-hero-image">
+      <img id="mobileHeroImage" src="images/image-hero-mobile.png" alt="man with laptop">
+    </div>
+
+    <div class="hero-content">
+      <h1>Make <br id="line-break"> remote work</h1>
+
+      <p>Get your team in sync, no matter your location. Streamline processes,
+        create team rituals, and watch productivity soar.</p>
+      <div class="button-container">
+        <button>Learn more</button>
+      </div>
+
+      <div class="icons">
+        <img src="images/client-databiz.svg" alt="databiz logo">
+        <img src="images/client-audiophile.svg" alt="audiophile logo">
+        <img src="images/client-meet.svg" alt="meet logo">
+        <img src="images/client-maker.svg" alt="maker logo">
+      </div>
+    </div>
+
+    <div class="hero-image">
+      <img src="images/image-hero-desktop.png" alt="man with laptop">
+    </div>
+
+</body>
+
+</html>
